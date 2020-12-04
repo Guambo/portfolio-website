@@ -12,7 +12,7 @@
         <div>
             <!-- Maybe move this section or condense it? -->
             <h3>Skills</h3>
-            <p>Languages: Java 4 years | C# 4 years | C++ 3 years | JavaScript 1 year | Python 1 year</p>
+            <p>Languages: Java 4 years | C# 3 years | C++ 3 years | JavaScript 1 year | Python 1 year</p>
             <p>Favorite Tools: Unity3D Game Engine | Atom | VS2019 / VSCode | Aseprite | Trello | Github</p>
         </div>
         <div>
@@ -20,9 +20,46 @@
             <h2>Projects</h2>
             <h3>🎮 Games & Apps 📱</h3>
             <ul>
-                <li>[Platformer itchio embed]</li>
-                <li>[OCTSHMUP itchio embed]</li>
-                <li>[Goo Runner on google play store embed] (Optional: create a webapp build of the game in unity and embed game in browser)</li>
+                <li>
+                    <iframe
+                        src="https://itch.io/embed/439919?bg_color=7cc68d&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=43916b"
+                        width="615" height="167" frameborder="0"><a href="https://guambo.itch.io/goo-runner">Goo Runner by
+                            Guambo</a>
+                    </iframe>
+                    <a href="https://play.google.com/store/apps/details?id=com.Guambo.GooRunner" data-label="google_play"
+                        class="google_play_btn store_btn">
+                        <img srcset="https://static.itch.io/images/store_badges/google.png 1x, https://static.itch.io/images/store_badges/google@2x.png 2x"
+                            src="https://static.itch.io/images/store_badges/google.png">
+                    </a>
+                    <p>
+                        Arcade mobile game made using Unity2D Game Engine, C#, and Aseprite over the course of one month. The objective
+                        is to avoid an endless wave of oncoming obstacles by jumping over them. Each obstacle you jump over rewards you
+                        with 1 point. So far I've published the game to the Google Play Store and Itch.io (See link above). The next
+                        step for this game is to integrate an online leaderboard system using google play services so people can compete
+                        with others worldwide for the highest score.
+                    </p>
+                </li>
+                <li>
+                    <iframe
+                        src="https://itch.io/embed/748529?bg_color=aac755&amp;fg_color=163c44&amp;link_color=5d1d43&amp;border_color=479870"
+                        width="615" height="167" frameborder="0"><a href="https://guambo.itch.io/platforming-prototype">Platformer Prototype
+                            by Guambo</a>
+                    </iframe>
+                    <p>
+                        Made using Unity2D Game Engine and C#. Art assets were made using Aseprite. I spent around 2-3 months tweaking the movement code to make the player movement feel <i>just</i> right. If you aren't familiar with what a platformer is then think of the old 2D Mario series. The players objective is to move the character from point A (the level spawn point) to point B (the end of the level). The problem that you are trying to solve in platformers is "how do I make going from point A to point B interesting?" For this prototype, I wanted to focus on creating solid movement mechanics, including wall-jumping, wall-sliding, and dashing. With these features the player can interact with the environment in an interesting way. Plus, having these features leads to more interesting level design. In other words, the key to platformers is to first have solid, fundamental player movement mechanics. Then, and only then, can you start focusing on how to make going from point A ot point B interesting.
+                    </p>
+                </li>
+                <li>
+                    <iframe
+                        src="https://itch.io/embed/822002?bg_color=45283c&amp;fg_color=eec39a&amp;link_color=8f563b&amp;border_color=4e4c60"
+                        width="615" height="167" frameborder="0"><a href="https://perceez.itch.io/octshmup">OCTSHMUP : Overly complicated
+                            Tetris Shoot'em Up by PerceeZ, composerporter, Guambo, Lysco, Epsiom</a>
+                    </iframe>
+                    <p>
+                        Collaborated with 3 other programmers from France and 1 composer from the US. We submitted the game to a 48-hour game development competition called <a
+                        href="https://itch.io/jam/mix-and-game-jam-2020">Mix and Game Jam 2020</a>. <a href="https://itch.io/jam/mix-and-game-jam-2020/rate/822002">Click here to view the games' submission page!</a> My main role was 2D artist, but I also helped code the player movement, the shooting mechanics, and the infinite background scrolling effect.
+                    </p>
+                </li>
                 <li>[Random music generator (publish to google play store as well)]</li>
             </ul>
         </div>
@@ -39,6 +76,7 @@
             <!-- It would be more satisfying if the article would generate below each link -->
             <h2>Blog</h2>
             <ul>
+                <li><a>What is Unity? (Explain how the engine works i.e. the game loop + key C# UnityEngine API classes (GameObject => Transform => Vector3, Awake() => Start() => Update() vs FixedUpdate() => OnTriggerEnter())</a></li>
                 <li><a>Getting the best movement feel using Unity2D rigidbody</a></li>
                 <li><a>Creating a platformer player class using Sebastion Lagues tutorials</a></li>
                 <li><a>Skip-list data structure explained</a></li>
