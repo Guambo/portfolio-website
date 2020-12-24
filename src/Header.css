@@ -1,8 +1,12 @@
 .header {
-  margin-top: 30px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  position: sticky;
+  background-color: white;
 }
 
 .header__title {
@@ -13,7 +17,7 @@
 .header__sections {
   display: flex;
   justify-content: center;
-  margin-top: 2px;
+  padding-top: 2px;
 }
 
 .header__sections > p {
