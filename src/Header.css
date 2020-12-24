@@ -1,0 +1,34 @@
+.header {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+
+.header__title {
+  font-size: 30pt;
+  font-weight: 450;
+}
+
+.header__sections {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.header__sections > p {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__sections > p:hover {
+  background-size: 50% 50%;
+  background-color: #acb8ce81;
+  border-bottom: 5px solid #92a8d1;
+  cursor: pointer;
+}
