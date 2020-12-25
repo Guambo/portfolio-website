@@ -6,9 +6,9 @@ function Header() {
         <div className="header">
             <div className="header__title">Nicholas Vallejos</div>
             <div className="header__sections">
-                <p>About</p>
-                <p>Projects</p>
-                <p>Contact</p>
+                <a href="#about"><p>About</p></a>
+                <a href="#projects"><p>Projects</p></a>
+                <a href="#contact"><p>Contact</p></a>
             </div>
         </div>
     )

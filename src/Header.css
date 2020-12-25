@@ -1,7 +1,8 @@
 .header {
-  position: -webkit-sticky; /* Safari */
+  /* Safari */
+  /* position: -webkit-sticky; 
   position: sticky;
-  top: 0;
+  top: 0; */
   padding-top: 20px;
   padding-bottom: 10px;
   display: flex;
@@ -20,7 +21,7 @@
   padding-top: 2px;
 }
 
-.header__sections > p {
+.header__sections > a {
   margin-left: 10px;
   margin-right: 10px;
   width: 75px;
@@ -28,11 +29,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
-.header__sections > p:hover {
+.header__sections > a:visited {
+  text-decoration: none;
+}
+
+.header__sections > a:hover {
   background-size: 50% 50%;
   background-color: #acb8ce81;
   border-bottom: 5px solid #92a8d1;
-  cursor: pointer;
+  text-decoration: none;
+}
+
+.header__sections > a.active {
+  text-decoration: none;
 }

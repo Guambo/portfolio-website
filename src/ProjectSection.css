@@ -1,0 +1,36 @@
+.projectSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  min-height: 534px;
+}
+
+.projectSection__left {
+  width: 50%;
+}
+
+.projectSection__right {
+  width: 50%;
+}
+
+.projectSection__goo {
+  /* height: 50%; */
+  background-color: green;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+}
+
+.projectSection__platformer {
+  /* height: 50%; */
+  background-color: rgb(93, 29, 67);
+  border-left: 1px solid black;
+  border-bottom: 2px solid black;
+}
+
+.projectSection__octshmup {
+  /* height: 50%; */
+  background-color: rgb(143, 86, 59);
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+}

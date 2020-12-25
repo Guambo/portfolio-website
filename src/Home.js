@@ -1,12 +1,13 @@
 import React from 'react';
 import './Home.css';
 import About from './About.js';
+import ProjectSection from './ProjectSection.js';
 
 function Home() {
     return (
         <div className="home">
             <About />
-            { /* Projects Component */ }
+            <ProjectSection />
             { /* Contact Component */ }
         </div>
     )
