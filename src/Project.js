@@ -18,13 +18,13 @@ function Project(props) {
                 </iframe>
             }
             {props.itchLink == "" && 
-                <div className="project__header">
+                <div className="project__header" style={{backgroundColor: props.headerColor}}>
                     {props.image !== "" && 
                         <img onLoad={onImageLoad} src={props.image} />
                     }
                     <div className="project__headerRight" style={{height: imageHeight}}>
                         {props.title !== "" &&
-                            <h2>{props.title}</h2>
+                            <a href="https://play.google.com/store/apps/details?id=music.generator"><h1>{props.title}</h1></a>
                         }
                         {props.playStoreLink !== "" &&
                             <a href={props.playStoreLink}>

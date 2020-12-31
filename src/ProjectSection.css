@@ -5,8 +5,12 @@
 
 .projectSection > h1 {
   color: #ebfffc;
-  background-color: #39557b;
+  background-color: #232222;
   padding: 5px;
+  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .projectSection__content {

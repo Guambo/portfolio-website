@@ -11,7 +11,7 @@ function ProjectSection() {
                 <div className="projectSection__content__left">
                     <Project
                         title=""
-                        backgroundColor="green"
+                        backgroundColor="#ad3045"
                         image=""
                         iframeSrc="https://itch.io/embed/439919?bg_color=7cc68d&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=43916b"
                         itchLink="https://guambo.itch.io/goo-runner"
@@ -20,7 +20,7 @@ function ProjectSection() {
                             <p>
                             Arcade mobile game made using Unity2D Game Engine, C#, and Aseprite over the course of one month. The objective
                                         is to avoid an endless wave of oncoming obstacles by jumping over them. Each obstacle you jump over rewards you
-                                        with 1 point. So far I've published the game to the Google Play Store and Itch.io. I used Trello for project management and git for source control.
+                                        with 1 point. So far I've published the game to the <a href="https://play.google.com/store/apps/details?id=com.Guambo.GooRunner">Google Play Store</a> and Itch.io. I used Trello for project management and git for source control.
                             </p>
                         }
                     />
@@ -55,7 +55,8 @@ function ProjectSection() {
                     />
                     <Project
                         title="Random Music Generator"
-                        backgroundColor="#3232ac" 
+                        backgroundColor="rgb(25 25 82)"
+                        headerColor="#bb3333" 
                         image={musicAppIcon}
                         iframeSrc=""
                         itchLink=""
