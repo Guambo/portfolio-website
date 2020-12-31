@@ -11,6 +11,7 @@
   height: 50%;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid black;
 }
 
 .project > iframe {
@@ -34,4 +35,39 @@
 .project > p > a:hover {
   text-decoration: none;
   color: black;
+}
+
+.project__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid rgb(47 23 23);
+  background-color: #32acac;
+  margin-bottom: 10px;
+}
+
+.project__headerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.project__headerRight > h2 {
+  color: rgb(255, 255, 255);
+}
+
+.project__header > img {
+  object-fit: contain;
+  border-right: 2px solid rgb(47 23 23);
+}
+
+.project__header > a {
+  margin-top: 5px;
 }
