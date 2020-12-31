@@ -3,10 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 20px;
   width: 100%;
   height: 50%;
   margin-left: auto;
@@ -47,27 +44,40 @@
   margin-bottom: 10px;
 }
 
+.project__header > img {
+  object-fit: contain;
+  border-right: 2px solid rgb(47 23 23);
+}
+
 .project__headerRight {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  text-align: left;
+  justify-content: space-around;
   align-items: flex-start;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
   padding-left: 10px;
   width: 100%;
-  height: 100%;
 }
 
 .project__headerRight > h2 {
   color: rgb(255, 255, 255);
 }
 
-.project__header > img {
-  object-fit: contain;
-  border-right: 2px solid rgb(47 23 23);
-}
-
-.project__header > a {
-  margin-top: 5px;
-}
+/*
+Note: 
+  - This represents the css class for the game image in the itch.io embed (.thumb__wrapper)
+  - What im trying to do here is have the game image display when the viewport reaches 560px in width
+  - The embed automatically removes the game image at widths < 560px (I dont want this behavior)
+  - You cannot change this with the below media query because an iframe is a 'hole' 
+    => cannot inject my css into iframe to override its media call (Lookup Cross Site Scripting)
+  - Check this out: https://stackoverflow.com/questions/6494721/override-body-style-for-content-in-an-iframe 
+*/
+/* 
+@media (max-width: 560px) and (min-width: 320px) {
+  .game_widget_page .first_page .thumb_wrapper {
+    display: flex !important;
+  }
+} 
+*/

@@ -3,18 +3,18 @@
   flex-direction: column;
 }
 
+.projectSection > h1 {
+  color: #ebfffc;
+  background-color: #39557b;
+  padding: 5px;
+}
+
 .projectSection__content {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100vh;
   min-height: 534px;
-}
-
-.projectSection > h1 {
-  color: #ebfffc;
-  background-color: #39557b;
-  padding: 5px;
 }
 
 .projectSection__content__left {
@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 50vh;
+    height: 100%;
     min-height: 534px;
   }
 

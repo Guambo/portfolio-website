@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Project.css';
 
 function Project(props) {
+    const [imageHeight, setImageHeight] = useState(0);
+
+    const onImageLoad = ({target:img}) => {
+        setImageHeight(img.offsetHeight);
+    }
+    
     return (
         <div className="project" style={{backgroundColor: props.backgroundColor}}>
             {props.itchLink !== "" &&
@@ -14,9 +20,9 @@ function Project(props) {
             {props.itchLink == "" && 
                 <div className="project__header">
                     {props.image !== "" && 
-                        <img src={props.image} />
+                        <img onLoad={onImageLoad} src={props.image} />
                     }
-                    <div className="project__headerRight">
+                    <div className="project__headerRight" style={{height: imageHeight}}>
                         {props.title !== "" &&
                             <h2>{props.title}</h2>
                         }

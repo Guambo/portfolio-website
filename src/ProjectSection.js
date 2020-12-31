@@ -29,7 +29,7 @@ function ProjectSection() {
                         backgroundColor="rgb(143, 86, 59)" 
                         image=""
                         iframeSrc="https://itch.io/embed/822002?bg_color=45283c&amp;fg_color=eec39a&amp;link_color=8f563b&amp;border_color=4e4c60"
-                        itchLink="https://guambo.itch.io/goo-runner"
+                        itchLink="https://perceez.itch.io/octshmup"
                         playStoreLink=""
                         descriptionParagraph={
                             <p>
@@ -62,7 +62,7 @@ function ProjectSection() {
                         playStoreLink="https://play.google.com/store/apps/details?id=music.generator"
                         descriptionParagraph={
                             <p>
-                            An Android mobile app that can generate unique short piano tracks with a single tap. Made during Binghamton University's annual 24-hour Hackathon using Android Studio and Java. I collaborated with 2 other programmers and was responsible for debugging the music generation algorithm and UI related code (setting up user input in the app and ensuring user input was valid). I used Trello for project management and git for source control.
+                            An Android mobile app that can generate unique short piano tracks with a single tap. Made during Binghamton University's annual 24-hour Hackathon using Android Studio and Java. I collaborated with 2 other programmers and was responsible for debugging the music generation algorithm and UI related code (setting up user input in the app and ensuring user input was valid). We used Trello for project management and git for source control.
                             </p>
                         }
                     />
