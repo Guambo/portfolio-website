@@ -20,14 +20,25 @@
   background-image: url(https://s1.1zoom.me/b5050/256/Mountains_Stars_Sky_Scenery_USA_Cascades_Mount_529129_1920x1080.jpg);
 }
 
-.about__main > .about__card {
+.about__main__right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.about__card__lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.about__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-}
-
-.about__card {
   border: 2px solid rgb(0, 0, 0);
   box-shadow: none;
   background-color: rgba(255, 255, 255, 0.85);
@@ -35,30 +46,47 @@
   margin-bottom: 5px;
 }
 
-.about__title {
+.about__card__profile {
+  object-fit: contain;
+  width: 50%;
+  border-radius: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__card__title {
   font-weight: 350;
   font-size: 16pt;
   margin-bottom: 5px;
 }
 
-.about__main > .about__card > p {
+.about__card > p {
   max-width: 275px;
-  width: 100%;
   text-indent: 10px;
-  text-align: left;
+  text-align: center;
 }
 
-.about__footer {
+.about__links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.about__footer > .about__card {
+.about__links > .about__card {
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  width: 100px;
+  width: 28%;
+}
+
+.about__links > a {
+  text-decoration: none;
+  color: black;
+}
+
+.about__links > a:hover {
+  color: magenta;
 }
 
 /* .about__footer > .about__card {
