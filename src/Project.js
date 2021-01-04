@@ -13,11 +13,11 @@ function Project(props) {
             {props.itchLink !== "" &&
                 <iframe
                     src={props.iframeSrc}
-                    frameborder="0">
+                    frameBorder="0">
                         <a href={props.itchLink}></a>
                 </iframe>
             }
-            {props.itchLink == "" && 
+            {props.itchLink === "" && 
                 <div className="project__header" style={{backgroundColor: props.headerColor}}>
                     {props.image !== "" && 
                         <img onLoad={onImageLoad} src={props.image} />
@@ -28,7 +28,7 @@ function Project(props) {
                         }
                         {props.playStoreLink !== "" &&
                             <a href={props.playStoreLink}>
-                                <img srcset="https://static.itch.io/images/store_badges/google.png 1x, https://static.itch.io/images/store_badges/google@2x.png 2x" src="https://static.itch.io/images/store_badges/google.png"></img>
+                                <img srcSet="https://static.itch.io/images/store_badges/google.png 1x, https://static.itch.io/images/store_badges/google@2x.png 2x" src="https://static.itch.io/images/store_badges/google.png"></img>
                             </a>
                         }
                     </div>
