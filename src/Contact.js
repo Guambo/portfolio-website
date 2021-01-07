@@ -8,10 +8,13 @@ function Contact() {
     const [email, updateEmail] = useState("");
     const [phone, updatePhone] = useState("");
     const [feedback, updateMessage] = useState("");
+    // Vars for EmailJS
+    const templateId = "template_iabq0mc";
+    const service = "service_01wy4s5"
 
-    const sendFeedback = (templateId, variables) => {
+    const sendFeedback = (variables) => {
         window.emailjs.send(
-            "service_01wy4s5", templateId, variables
+            service, templateId, variables
         )
         .then(res => {
             console.log("Email successfully sent!");
@@ -22,16 +25,15 @@ function Contact() {
     }
 
     const handleSubmit = () => {
-        const templateId = "template_iabq0mc";
-        const name = fname + " " + lname;
-        
         // Check that all fields are filled
         if (fname === "" || lname === "" || feedback === "" || phone === "" || email === "") {
-            console.log("All fields must be filled out");
+            // console.log("All fields must be filled out");
             return;
         }
 
-        sendFeedback(templateId, {
+        const name = fname + " " + lname;
+        
+        sendFeedback({
             from_name: name,
             message: feedback,
             phone_number: phone, 
@@ -51,7 +53,7 @@ function Contact() {
                         <h4>914.860.6541</h4>
                     </div>
                 </div>
-                <form className="contact__form__input">
+                <form className="contact__form__input" action="mailto:nvallejos123@gmail.com" method="post" enctype="text/plain">
                     <p>First Name</p>
                     <input type="text" onChange={(e) => updateFname(e.target.value)} required></input>
                     <p>Last Name</p>
